@@ -13,7 +13,7 @@ class GeneInfoFileNotFound(Exception):
 
 
 def parse_synonyms(values):
-    return [val for val in values.split('|') if val]
+    return [val for val in values.split('|') if val and val != '-']
 
 
 def parse_sources(values):
